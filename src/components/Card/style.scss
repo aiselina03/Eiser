@@ -1,0 +1,92 @@
+.cards {
+  width: 100%;
+  margin-top: 50px;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  .card {
+    border: 1px solid #f0f2f1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .img {
+      position: relative;
+      img {
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+      }
+      &:hover {
+        .icons {
+          opacity: 1;
+        }
+      }
+      .icons {
+        transition: all 900ms;
+        opacity: 0;
+        width: 180px;
+        height: 50px;
+        position: absolute;
+        bottom: 7px;
+        left: 35px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 23px;
+        background: rgba(113, 205, 20, 0.4);
+        .eye,
+        .heart,
+        .basket {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background-color: rgb(255, 255, 255);
+          border-radius: 50%;
+        }
+        a {
+          color: black;
+          .fa-eye {
+            padding: 11px;
+            font-size: 18px;
+          }
+        }
+
+        .fa-heart,
+        .fa-cart-shopping {
+          padding: 11px;
+          font-size: 18px;
+        }
+      }
+    }
+    .info {
+      padding: 20px;
+      line-height: 25px;
+      font-size: 17px;
+      .price {
+        font-weight: bold;
+      }
+      .discount {
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+.green {
+  color: rgb(113, 205, 20);
+}
+
+
+.spin{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fa-spin{
+    font-size: 100px;
+    color: rgb(113, 205, 20);
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+  gap: 30px;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  font-family: sans-serif;
+  .cardwishlist {
+    border: 1px solid #f0f2f1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    width: 280px;
+    height: 320px;
+    position: relative;
+    img {
+      width: 240px;
+      height: 240px;
+      padding: 30px;
+    }
+    .fa-heart {
+      cursor: pointer;
+      font-size: 20px;
+      position: absolute;
+      top: 20px;
+      left: 240px;
+      color: rgb(113, 205, 20);
+    }
+    .price{
+      font-weight: bold;
+    }
+  .addBtn{
+    cursor: pointer;
+    background-color: rgb(113, 205, 20);
+    padding: 5px 8px;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+  }
+}
+
+.fade{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fa-beat-fade{
+    font-size: 100px;
+    color: rgb(113, 205, 20);
+  }
+}
